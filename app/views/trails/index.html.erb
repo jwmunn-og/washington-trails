@@ -1,1 +1,14 @@
-<h1>Hello!</h1>
+<div class="row">
+  <div class="columns small-12 large-6 large-offset-3"
+    <% @trails.each do |trail| %>
+    <div class="row">
+      <div class="card columns small-12">
+        <h1><%= trail.name %></h1>
+        <p>Location: <%= trail.location %></p>
+        <p>Length: <%= trail.length %></p>
+        <p>Elevation: <%= trail.location %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
