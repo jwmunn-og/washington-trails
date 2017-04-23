@@ -1,0 +1,51 @@
+body {
+  background: #FBD490 image-url(topography) repeat;
+  background-blend-mode: multiply;
+}
+
+h1, h2, .logo {
+  font-family: 'Roboto Slab', serif;
+  color: #00AD7C;
+}
+
+p, .label, .button {
+  font-family: 'Roboto', sans-serif;
+}
+
+p, .label {
+  color: #475762;
+}
+
+.button {
+  background: #00AD7C;
+  transition: background .2s ease;
+
+  &:hover {
+    background: darken(#00AD7C, 5%);
+  }
+}
+
+.card {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.top-bar, .top-bar ul {
+  background: #FFF;
+  & a {
+    color: #00AD7C;
+    font-size: 125%;
+  }
+ 
+}
+
+
+
+.top-bar {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.container {
+  max-width:76rem;
+  margin: 0 auto;
+}

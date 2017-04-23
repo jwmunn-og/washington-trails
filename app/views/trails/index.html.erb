@@ -1,12 +1,12 @@
-<div class="row">
-  <div class="columns small-12 large-6 large-offset-3"
+<div class="row align-center">
+  <div class="columns small-11 large-6">
     <% @trails.each do |trail| %>
     <div class="row">
       <div class="card columns small-12">
-        <h1><%= trail.name %></h1>
-        <p>Location: <%= trail.location %></p>
-        <p>Length: <%= trail.length %></p>
-        <p>Elevation: <%= trail.location %></p>
+        <h2><%= trail.name %></h2>
+        <p><%= fa_icon "map-marker" %>&nbsp;<strong>Location:</strong> <%= trail.location %></p>
+        <p><%= fa_icon "arrows-h" %>&nbsp;<strong>Length:</strong> <%= trail.length.to_f %> miles</p>
+        <p><%= fa_icon "line-chart" %>&nbsp;<strong>Elevation:</strong> <%= trail.elevation %> ft</p>
       </div>
     </div>
     <% end %>
